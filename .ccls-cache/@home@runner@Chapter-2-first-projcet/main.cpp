@@ -1,5 +1,13 @@
+// display my initals//
 #include <iostream>
 using namespace std;
 
 int main() 
-{cout << "Hello World!\n"; }
+{
+  char first, middle, last;
+first='d';
+middle='v';
+  last='g';
+  cout << first << middle << last << endl;
+  return 0; 
+}
