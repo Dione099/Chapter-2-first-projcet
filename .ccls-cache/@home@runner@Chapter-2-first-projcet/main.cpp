@@ -1,19 +1,17 @@
-// Dione George
-// 9/16/24
-//project 2.17
-//checkpoint_2-17
+
 #include <iostream>
 using namespace std;
 
-int main() 
-{//storing the information in sepreate string variables
-  std::string name = "Dione George";
-  std::string address = "123 Main Street";
-  std::string phone_number = "123-456-7890";
+int main() {
+    const int total_customers = 16500;
+    const double energy_drinkers_percentage = 0.15;
+    const double citrus_drinkers_percentage = 0.58;
 
-  //display the contents of the string objects
- std:: cout << "name: " << name << std::endl;
- std:: cout << "address: " << address << std::endl;
-  std::cout << "phone number: " << phone_number << std::endl;
-  return 0; 
+    int energy_drinkers = total_customers * energy_drinkers_percentage;
+    int citrus_drinkers = energy_drinkers * citrus_drinkers_percentage;
+
+    cout << "Number of customers who buy one or more energy drinks per week: " << energy_drinkers << endl;
+    cout << "Number of customers who prefer citrus-flavored energy drinks: " << citrus_drinkers << endl;
+
+    return 0;
 }
