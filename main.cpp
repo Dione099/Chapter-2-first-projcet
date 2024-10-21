@@ -1,17 +1,16 @@
-
 #include <iostream>
 using namespace std;
-
 int main() {
-    const int total_customers = 16500;
-    const double energy_drinkers_percentage = 0.15;
-    const double citrus_drinkers_percentage = 0.58;
+    const double gallons_in_tank = 20;
+    const double mpg_town = 23.5;
+    const double mpg_highway = 28.9;
 
-    int energy_drinkers = total_customers * energy_drinkers_percentage;
-    int citrus_drinkers = energy_drinkers * citrus_drinkers_percentage;
+    double distance_town = gallons_in_tank * mpg_town;
+    double distance_highway = gallons_in_tank * mpg_highway;
 
-    cout << "Number of customers who buy one or more energy drinks per week: " << energy_drinkers << endl;
-    cout << "Number of customers who prefer citrus-flavored energy drinks: " << citrus_drinkers << endl;
+    cout << "Distance the car can travel in town: " << distance_town << " miles" << endl;
+    cout << "Distance the car can travel on the highway: " << distance_highway << " miles" << endl;
 
     return 0;
 }
+
